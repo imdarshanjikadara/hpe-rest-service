@@ -2,7 +2,7 @@
 
 A RESTful web service built with **Java Spring Boot** that manages a list of employees. It supports querying all employees (`GET`) and adding new employees from JSON (`POST`), and is covered by unit and integration tests.
 
-Built as part of the **Hewlett Packard Enterprise (HPE) Software Engineering Job Simulation** on [Forage](https://www.theforage.com/).
+My work for Hewlett Packard Enterprise's **"Software Engineering"** job simulation on [Forage](https://www.theforage.com/) (completed November 2026).
 
 ---
 
@@ -16,6 +16,8 @@ The simulation was split into four tasks, each building on the last:
 | **2. GET endpoint** | Built the `Employee`, `Employees`, `EmployeeManager` and `EmployeeController` classes and a `GET /employees` endpoint returning hard-coded employees as JSON | Working read-only API |
 | **3. POST endpoint** | Added setters and a `POST /employees` endpoint that accepts JSON and adds a new employee | API supports create + read |
 | **4. Testing** | Wrote JUnit 5 unit tests for every class and integration tests that send real HTTP requests | 13 tests, all passing |
+
+The project starts from Spring's [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/) guide. The `Greeting` classes are that guide's starter code; everything named `Employee*` is mine.
 
 ---
 
@@ -142,6 +144,12 @@ mvnw.cmd clean test     # Windows
 - **Testing** - writing fast unit tests with JUnit 5, plus integration tests that start the app and check real HTTP requests and responses; isolating tests with `@DirtiesContext` so they can't affect each other.
 - **Build tools** - using the Maven wrapper to build and test the project with no global install.
 - **Cloud context** - how a platform like HPE GreenLake could host a service like this on-premises with a cloud-style, pay-per-use model.
+
+---
+
+## Certificate
+
+<img src="docs/certificate.png" alt="Forage certificate of completion" width="600">
 
 ---
 
